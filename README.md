@@ -1,60 +1,94 @@
-# Open Source Contribution Journal — CodePath AI301
+# Contribution #1: Add field for developer-supplied notes for feature flags
 
-## About This Repo
-This repository documents my open source contribution journey 
-as part of CodePath's AI301 capstone course.
+**Contribution Number:** 1
+**Student:** Mo200227
+**Issue:** https://github.com/oppia/oppia/issues/19610
+**Status:** Phase I Complete
 
-## Issue Selected
-**Project:** Oppia  
-**What it is:** A free, online learning platform to make 
-quality education accessible for all  
-**Issue #:** 19610  
-**Issue Title:** Add field for developer-supplied notes 
-for feature flags  
-**Link:** https://github.com/oppia/oppia/issues/19610  
-**Labels:** good first issue, Work: Low, Impact: Medium  
+---
 
-## What The Issue Is About
-The Oppia platform has "feature flags" — settings that 
-developers can turn on/off in the Release Coordinator page. 
-Currently these flags have no way to include notes for 
-the admins who manage them.
+## Why I Chose This Issue
 
-The goal is to add a `developer_notes` field to the feature 
-flag specification so developers can write instructions like 
-"When this flag is turned off, please click the Regenerate 
-summary models button." These notes should appear in the 
-Release Coordinator UI when they are not empty.
+I chose this issue because it involves Python backend work, which aligns with 
+my programming experience from CS1302. The task is well-scoped and clearly 
+defined: add a `developer_notes` field to the feature flag specification in 
+the Oppia codebase and display it in the Release Coordinator UI.
 
-## Why I Picked This Issue
-- Labeled "good first issue" with "Work: Low"
-- The solution approach is clearly documented in the 
-  issue comments
-- Involves Python (backend) which I have experience with
-- The task is well-scoped and concrete
+I'm interested in this issue because it involves both backend (Python) and 
+frontend (HTML/TypeScript) work, giving me exposure to a full-stack change 
+in a real production codebase. The issue has detailed comments from previous 
+contributors showing exactly which files need to change, which will help me 
+navigate an unfamiliar codebase for the first time.
 
-## Files I Will Need To Change
-Based on reviewing the issue discussion:
-- `core/domain/feature_flag_domain.py` — add 
-  `developer_notes` field to FeatureFlagSpec
-- `core/templates/pages/release-coordinator-page/
-  features-tab/features-tab.component.html` — display 
-  the notes in the UI
-- `core/templates/pages/release-coordinator-page/
-  features-tab/features-tab.component.ts` — update 
-  the component logic
+---
+
+## Understanding the Issue
+
+### Problem Description
+
+The Oppia platform has "feature flags" that developers can toggle on/off 
+in the Release Coordinator page. Currently, there is no way for developers 
+to leave notes for admins explaining what a flag does or what steps to take 
+when toggling it.
+
+### Expected Behavior
+
+Each feature flag should have an optional `developer_notes` field that is 
+hardcoded by developers in the backend. When this field is non-empty, it 
+should be displayed in the Release Coordinator UI so admins can see 
+important instructions.
+
+### Current Behavior
+
+Feature flags have no notes field. Admins have no way to know if special 
+steps are required when toggling a flag.
+
+### Affected Components
+
+- `core/domain/feature_flag_domain.py` — add `developer_notes` to FeatureFlagSpec
+- `core/templates/pages/release-coordinator-page/features-tab/features-tab.component.html` — display notes in UI
+- `core/templates/pages/release-coordinator-page/features-tab/features-tab.component.ts` — update component logic
 - Related test files
 
-## My Plan
-- [x] Find and select an appropriate issue
-- [x] Comment on the issue expressing interest
-- [ ] Wait for maintainer confirmation
-- [ ] Set up Oppia locally on my machine
-- [ ] Reproduce the missing feature
-- [ ] Implement the fix
-- [ ] Record a demo video
-- [ ] Submit pull request
+---
 
-## Status
-Currently waiting for maintainer response after 
-expressing interest on June 5, 2026.
+## Reproduction Process
+
+*To be completed in Phase II*
+
+---
+
+## Solution Approach
+
+*To be completed in Phase II*
+
+---
+
+## Testing Strategy
+
+*To be completed in Phase III*
+
+---
+
+## Implementation Notes
+
+*To be completed in Phase III*
+
+---
+
+## Pull Request
+
+*To be completed in Phase IV*
+
+---
+
+## Learnings & Reflections
+
+*To be completed at end of program*
+
+---
+
+## Resources Used
+
+- Issue thread: https://github.com/oppia/oppia/issues/19610
+- Oppia contributing wiki: https://github.com/oppia/oppia/wiki/Contributing-code-to-Oppia
