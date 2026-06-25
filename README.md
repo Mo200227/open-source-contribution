@@ -1,17 +1,9 @@
-## Implementation Notes
+## Pull Request
 
-### Week 3 Progress (Jun 15)
-**What I built:**
-- Removed `docs/plugins/absubmit.rst` — AcousticBrainz service permanently shut down
-- Removed `docs/plugins/acousticbrainz.rst` — same upstream shutdown
-- Removed `docs/plugins/beatport.rst` — plugin deprecated
-- Updated `docs/plugins/index.rst` — removed all references to the three deleted plugins from the toctree and description sections
+**PR Link:** https://github.com/beetbox/beets/pull/6778
 
-**Challenges faced:**
-- Confirmed Oppia required Python 3.10 which was incompatible with my Python 3.13.1, so switched to beets instead
-- Used sed commands to cleanly remove plugin references from the index file
+**PR Description:** Removed documentation for three deprecated plugins (acousticbrainz, absubmit, beatport) whose upstream services have been shut down. Updated the plugin index and added a changelog entry.
 
-**Commits:**
-- ba03515: docs: remove deprecated acousticbrainz, absubmit, and beatport plugins
+**Status:** Awaiting review
 
-**Branch:** https://github.com/Mo200227/beets/tree/fix-issue-5780
+**Maintainer Feedback:** None yet — PR submitted June 25, 2026
