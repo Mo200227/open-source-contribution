@@ -1,9 +1,9 @@
-## Pull Request
+---
 
-**PR Link:** https://github.com/beetbox/beets/pull/6778
+# Cycle 2 — Contribution #2: $EDITOR is not respected, likely due to uv virtualenv
 
-**PR Description:** Removed documentation for three deprecated plugins (acousticbrainz, absubmit, beatport) whose upstream services have been shut down. Updated the plugin index and added a changelog entry.
+**Issue:** https://github.com/beetbox/beets/issues/6641
+**Status:** Phase I Complete
 
-**Status:** Awaiting review
-
-**Maintainer Feedback:** None yet — PR submitted June 25, 2026
+## Why I Chose This Issue
+This issue was recently marked as `good first issue` by maintainer @semohr who also approved the proposed solution. The fix involves adding an `editor` config option to beets so users can permanently set their preferred editor in `config.yaml` instead of relying on the `$EDITOR` environment variable.
